@@ -1,0 +1,21 @@
+﻿@model ParcialABMProductos.Models.Producto
+
+@{
+    ViewData["Title"] = "Página de Inicio";
+}
+
+<div class="text-center">
+    <h1 class="display-4">ABM Productos</h1>
+    <hr class="my-4 mx-auto" style="width: 50%;" />
+    <div align="left">
+        <h3>¿Deseas agregar nuevos productos?</h3>
+        <a asp-controller="Productos" asp-action="Create" class="btn btn-success">Agregar productos</a>
+    </div>
+    
+    <hr class="my-4 mx-auto" style="width: 50%;" />
+    <div align="right">
+        <h3>¿Deseas ver el listado de los productos?</h3>
+        <a asp-controller="Productos" asp-action="Index" class="btn btn-primary">Ver listado</a>
+    </div>
+    
+</div>

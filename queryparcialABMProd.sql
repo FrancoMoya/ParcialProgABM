@@ -1,0 +1,13 @@
+CREATE DATABASE ParcialABMProductos
+USE ParcialABMProductos
+
+CREATE TABLE Productos(
+ID INT IDENTITY(1,1) PRIMARY KEY,
+Nombre VARCHAR(30) NOT NULL,
+Código VARCHAR(30) NOT NULL,
+Descripción VARCHAR(200),
+Precio DECIMAL(10, 2) NOT NULL,
+Tamaño VARCHAR(25) NOT NULL,
+);
+
+SELECT * FROM Productos
